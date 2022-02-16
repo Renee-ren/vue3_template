@@ -1,0 +1,31 @@
+// 任意宽度border
+.halfpx-border(@px,@borderColor,@borderRadius) {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform-origin: 0 0;
+    border: @px * 2 solid @borderColor;
+    border-radius: @borderRadius * 2;
+    width: 200%;
+    height: 200%;
+    transform: scale(0.5);
+  }
+}
+
+// 顶部两侧圆角蓝色背景
+.topside-bg(@color:#1482f0) {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 15px;
+    background: @color;
+  }
+}

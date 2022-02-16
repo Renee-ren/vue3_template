@@ -1,0 +1,34 @@
+{
+  "name": "meta_data_ts",
+  "version": "0.0.0",
+  "license": "ISC",
+  "private": "true",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node build_dist.js",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "fastclick-hvue": "^1.0.10",
+    "vant": "3",
+    "vconsole": "^3.11.0",
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.8",
+    "@vitejs/plugin-vue": "^2.0.0",
+    "glob": "^7.2.0",
+    "gulp": "^4.0.2",
+    "gulp-ssh": "^0.7.0",
+    "less": "^4.1.2",
+    "minimist": "^1.2.5",
+    "postcss-px-to-viewport": "^1.1.1",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-external-globals": "^0.6.1",
+    "shelljs": "^0.8.5",
+    "typescript": "^4.4.4",
+    "vite": "^2.7.2",
+    "vue-tsc": "^0.29.8"
+  }
+}
